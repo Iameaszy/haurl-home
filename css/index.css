@@ -1,0 +1,119 @@
+.brand {
+    color: darkblue;
+}
+
+.content {
+    position: relative;
+    height: 400px;
+    background-image: url('../images/bg01.jpg')
+}
+
+.home {}
+
+.home .home-text {
+    font-size: 22pt;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.home .home-text-small {
+    font-size: 100%;
+    margin-top: 12px;
+}
+
+.service {
+    margin: 1em 5rem;
+    margin-bottom: 5em;
+}
+
+.service .service-title {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.service .line {
+    padding: 4px 10px;
+    background: darkblue;
+    width: 4em;
+    margin-bottom: 10px;
+}
+
+.service .service-text {
+    width: 50%;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.service .service-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .service-grid .grid {
+    width: 20em;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+.service .service-grid .grid .grid-title {
+    color: darkblue;
+}
+
+.contact {
+    text-align: center;
+    background: #2f2e2e;
+    color: white;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-title {
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+.contact .contact-text {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contact .contact-btn {
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: blue;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 1em 5rem;
+    margin-bottom: 100px;
+}
+
+.newsletter .newsletter-title {
+    margin-bottom: 50px;
+}
+
+.newsletter .newsletter-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter .newsletter-grid .grid {
+    text-align: left;
+    width: 25em;
+}
+
+.newsletter .newsletter-grid .grid .grid-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.newsletter .newsletter-grid .grid .grid-title:not(.logo) {
+    color: darkblue;
+}
+
+.newsletter .newsletter-grid .grid .grid-title.logo {
+    text-align: center;
+}
