@@ -8,11 +8,27 @@
     background-image: url('../images/bg01.jpg')
 }
 
+.form {
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 0;
+    min-height: 55vh;
+}
+
+.big {
+    min-height: 75vh;
+    background: #e8e8e8;
+}
+
+.overlay1::after {
+    background: #e8e8e8;
+}
+
 .home {}
 
 .home .home-text {
-    font-size: 22pt;
-    line-height: 1.2;
+    font-size: 28pt;
+    line-height: 1.1;
     font-weight: bold;
 }
 
@@ -22,24 +38,32 @@
 }
 
 .service {
-    margin: 1em 5rem;
     margin-bottom: 5em;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .service .service-title {
-    color: darkblue;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.service .line {
-    padding: 4px 10px;
-    background: darkblue;
-    width: 4em;
-    margin-bottom: 10px;
+.service .service-holder {
+    background: darkviolet;
+    color: white;
+    padding: 3em;
+    border-radius: 10px;
+    margin-left: -70px;
+    margin-right: -70px;
+    box-shadow: 0px 7px 0px 0px dodgerblue;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .service .service-text {
     width: 50%;
+    margin: auto;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -51,16 +75,19 @@
 
 .service .service-grid .grid {
     width: 20em;
+    text-align: center;
     padding: 1rem 1rem 1rem 0rem;
 }
 
 .service .service-grid .grid .grid-title {
     color: darkblue;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
 .contact {
     text-align: center;
-    background: #2f2e2e;
+    background: darkviolet;
     color: white;
     padding: 10px;
     margin-bottom: 60px;
@@ -93,6 +120,8 @@
 
 .newsletter .newsletter-title {
     margin-bottom: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .newsletter .newsletter-grid {
@@ -116,4 +145,54 @@
 
 .newsletter .newsletter-grid .grid .grid-title.logo {
     text-align: center;
+}
+
+@media (max-width: 992px) {
+    .overlay1 {
+        height: 305px;
+    }
+    .overlay1::after {
+        display: none;
+    }
+    .form {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 310px;
+        min-height: unset;
+    }
+    .brand {
+        display: none;
+    }
+    .big {
+        min-height: 70vh;
+    }
+    .service .service-holder {
+        margin-top: 0;
+    }
+    .service .service-title {
+        text-align: left;
+        padding-left: 24.5%;
+    }
+}
+
+@media(max-width:760px) {
+    .service .service-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service .service-grid .grid {
+        width: 30em;
+        text-align: center;
+        padding: 1rem 1rem 3rem 0rem;
+    }
+}
+
+@media (max-width:690px) {
+    .service .service-text {
+        width: 100%;
+    }
 }
